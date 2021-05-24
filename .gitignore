@@ -1,4 +1,6 @@
-# Avoid accidental Sketch file upload 
+#  Remove node modules
+node_modules
+
 ###############################################
 ## Please do not remove line 5 - thanks! 🙂 ##
 ###############################################
