@@ -13,3 +13,10 @@ menuClose.addEventListener("click", () => {
   menuOpen.classList.remove("hidden");
   mobileMenu.classList.add("hidden");
 });
+
+mobileMenu.addEventListener("click", (e) => {
+  if (e.target == mobileMenu) {
+    menuOpen.classList.remove("hidden");
+    mobileMenu.classList.add("hidden");
+  }
+});
