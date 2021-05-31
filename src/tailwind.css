@@ -3,7 +3,6 @@
 body {
   background-image: url("../images/bg-tablet-pattern.svg"),
     url("../images/bg-tablet-pattern.svg");
-    color: hsla(0, 7%, 11%, 0.404);
   background-position: top -5rem right -5rem, bottom 33rem left -33rem;
 }
 
