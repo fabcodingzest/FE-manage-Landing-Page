@@ -15,10 +15,10 @@
     <script src="./script.js" async defer></script>
     <title>Frontend Mentor | Manage landing page</title>
   </head>
-  <body class="min-h-full bg-no-repeat bg-contain md:bg-auto">
-    <header class="lg:container lg:mx-auto p-3 md:p-4">
+  <body class="min-h-full bg-no-repeat bg-contain sm:bg-auto">
+    <header class="xl:container lg:mx-auto md:pt-12 px-3 md:px-4">
       <nav class="flex justify-between align-center py-4">
-        <div class="logo w-2/5">
+        <div class="logo">
           <img class="w-full" src="../images/logo.svg" alt="manage logo" />
         </div>
         <div class="hidden lg:block">
@@ -33,40 +33,12 @@
           <img src="../images/icon-hamburger.svg" alt="hamburger icon" />
         </div>
         <div
-          class="
-            mobile-menu
-            fixed
-            top-0
-            left-0
-            min-h-full
-            flex flex-col
-            hidden
-            p-6
-            w-full
-            bg-gray-800 bg-opacity-20
-            transition
-            delay-150
-            duration-300
-            ease-in-out
-          "
-        >
+          class="mobile-menu fixed top-0 left-0 min-h-full flex flex-col hidden p-6 w-full bg-gray-800 bg-opacity-20 transition delay-150 duration-300 ease-in-out">
           <div class="close-icon w-full py-1 flex justify-end mb-8 z-50">
             <img src="../images/icon-close.svg" alt="close icon" />
           </div>
           <div
-            class="
-              rounded
-              py-8
-              px-6
-              flex flex-col
-              justify-start
-              items-center
-              font-bold
-              bg-white
-              w-full
-              h-full
-            "
-          >
+            class="rounded py-8 px-6 flex flex-col justify-start items-center font-bold bg-white w-full h-full">
             <a href="#pricing" class="py-3"> Pricing </a>
             <a href="#products" class="py-3"> Products </a>
             <a href="#aboutus" class="py-3"> About Us </a>
@@ -76,7 +48,19 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <section class="banner lg:container lg:mx-auto md:p-4 flex flex-col lg:flex-row-reverse lg:mt-28" >
+      <div class="banner-image lg:w-1/2 flex justify-center lg:justify-end">
+        <img src="../images/illustration-intro.svg" alt="illustration-intro" />
+      </div>
+      <div class="banner-text lg:w-1/2 flex flex-col justify-center items-center text-center md:justify-start md:text-start ">
+        <h1>Bring everyone together to build better products.</h1>
+        <h4>
+          Manage makes it simple for software teams to plan day-to-day tasks
+          while keeping the larger team goals in view.
+        </h4>
+        <button>Get Started</button>
+      </div>
+    </section>
     <!-- <pre>
 
   Get Started

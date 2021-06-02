@@ -3,7 +3,7 @@
 body {
   background-image: url("../images/bg-tablet-pattern.svg"),
     url("../images/bg-tablet-pattern.svg");
-  background-position: top -5rem right -5rem, bottom 33rem left -33rem;
+  background-position: top -4rem right -4rem, bottom 33rem left -33rem;
 }
 
 @tailwind components;
