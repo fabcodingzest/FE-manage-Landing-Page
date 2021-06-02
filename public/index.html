@@ -5,40 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
     <link rel="stylesheet" href="./styles.css" />
     <script src="./script.js" async defer></script>
     <title>Frontend Mentor | Manage landing page</title>
   </head>
   <body class="min-h-full bg-no-repeat bg-contain sm:bg-auto">
-    <header class="xl:container lg:mx-auto md:pt-12 px-3 md:px-4">
-      <nav class="flex justify-between align-center py-4">
+    <header class="xl:container lg:mx-auto px-8 pt-6 md:pt-12">
+      <nav class="flex justify-between items-center py-4">
         <div class="logo">
           <img class="w-full" src="../images/logo.svg" alt="manage logo" />
         </div>
         <div class="hidden lg:block">
-          <a href="#pricing"> Pricing </a>
-          <a href="#products"> Products </a>
-          <a href="#aboutus"> About Us </a>
-          <a href="careers"> Careers </a>
-          <a href="community"> Community </a>
+          <a class="desktop-links" href="#pricing"> Pricing </a>
+          <a class="desktop-links" href="#products"> Products </a>
+          <a class="desktop-links" href="#aboutus"> About Us </a>
+          <a class="desktop-links" href="careers"> Careers </a>
+          <a class="desktop-links" href="community"> Community </a>
         </div>
-        <div class="btn hidden lg:block"><button>Get Started</button></div>
+        <div class="hidden lg:block"><a class="red-btn" href="#">Get Started</a></div>
         <div class="hamburger pr-2 lg:hidden">
           <img src="../images/icon-hamburger.svg" alt="hamburger icon" />
         </div>
-        <div
-          class="mobile-menu fixed top-0 left-0 min-h-full flex flex-col hidden p-6 w-full bg-gray-800 bg-opacity-20 transition delay-150 duration-300 ease-in-out">
-          <div class="close-icon w-full py-1 flex justify-end mb-8 z-50">
+        <div class="mobile-menu fixed top-0 left-0 min-h-full flex flex-col hidden p-6 w-full bg-gray-800 bg-opacity-20 transition delay-150 duration-300 ease-in-out">
+          <div class="close-icon w-full p-3.5 flex justify-end mb-8 z-50">
             <img src="../images/icon-close.svg" alt="close icon" />
           </div>
-          <div
-            class="rounded py-8 px-6 flex flex-col justify-start items-center font-bold bg-white w-full h-full">
+          <div class="rounded py-8 px-6 flex flex-col justify-start items-center font-bold bg-white w-full h-full">
             <a href="#pricing" class="py-3"> Pricing </a>
             <a href="#products" class="py-3"> Products </a>
             <a href="#aboutus" class="py-3"> About Us </a>
@@ -48,17 +41,14 @@
         </div>
       </nav>
     </header>
-    <section class="banner lg:container lg:mx-auto md:p-4 flex flex-col lg:flex-row-reverse lg:mt-28" >
+    <section class="banner xl:container lg:mx-auto px-8 flex flex-col lg:flex-row-reverse my-8 lg:mt-28">
       <div class="banner-image lg:w-1/2 flex justify-center lg:justify-end">
         <img src="../images/illustration-intro.svg" alt="illustration-intro" />
       </div>
-      <div class="banner-text lg:w-1/2 flex flex-col justify-center items-center text-center md:justify-start md:text-start ">
-        <h1>Bring everyone together to build better products.</h1>
-        <h4>
-          Manage makes it simple for software teams to plan day-to-day tasks
-          while keeping the larger team goals in view.
-        </h4>
-        <button>Get Started</button>
+      <div class="banner-text lg:w-1/2 flex flex-col justify-center items-center text-center md:items-start md:text-left mt-8 lg:mt-0">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl xl:text-7xl leading-snug xl:leading-tight font-bold text-primary-blue">Bring everyone together to build better products.</h1>
+        <p class="max-w-md sm:text-xl sm:leading-9 pt-8 md:pt-8 pb-12 text-neutral-grayish-blue">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+        <a href="#" class="red-btn">Get Started</a>
       </div>
     </section>
     <!-- <pre>
@@ -134,11 +124,11 @@
   Copyright 2020. All Rights Reserved
 
   </pre> -->
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
   </body>
 </html>
