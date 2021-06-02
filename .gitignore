@@ -2,7 +2,7 @@
 node_modules
 
 # Tailwind output
-./public/styles.css
+public/styles.css
 
 ###############################################
 ## Please do not remove line 5 - thanks! 🙂 ##
