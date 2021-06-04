@@ -10,7 +10,7 @@ body {
   color: hsl(228, 39%, 23%);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 640px) {
   body {
     background-position: top -4rem right -4rem, bottom 33rem left -33rem;
   }
@@ -23,7 +23,7 @@ body {
 }
 
 .red-btn{
-  @apply bg-primary-red px-8 py-3 rounded-full text-white font-bold shadow-red md:px-10 md:py-4;
+  @apply bg-primary-red px-6 py-2 rounded-full text-white font-bold md:px-10 md:py-4;
 }
 
 @tailwind utilities;

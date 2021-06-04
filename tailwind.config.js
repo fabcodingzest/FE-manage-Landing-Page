@@ -8,6 +8,9 @@ module.exports = {
       red: "0.2rem 1.2rem 0.4rem -0.2rem hsl(12,88%,90%)",
     },
     extend: {
+      gridTemplateColumns: {
+        m3: "max-content 3fr",
+      },
       colors: {
         primary: {
           blue: "hsl(228, 39%, 23%)",

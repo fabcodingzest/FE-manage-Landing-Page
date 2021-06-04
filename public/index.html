@@ -11,8 +11,8 @@
     <title>Frontend Mentor | Manage landing page</title>
   </head>
   <body class="min-h-full bg-no-repeat bg-contain sm:bg-auto">
-    <header class="xl:container lg:mx-auto px-8 pt-6 md:pt-12">
-      <nav class="flex justify-between items-center py-4">
+    <header class="xl:container lg:mx-auto">
+      <nav class="flex justify-between items-start px-6 pt-12">
         <div class="logo">
           <img class="w-full" src="../images/logo.svg" alt="manage logo" />
         </div>
@@ -23,15 +23,15 @@
           <a class="desktop-links" href="careers"> Careers </a>
           <a class="desktop-links" href="community"> Community </a>
         </div>
-        <div class="hidden lg:block"><a class="red-btn" href="#">Get Started</a></div>
+        <div class="hidden lg:block"><a class="red-btn shadow-red" href="#">Get Started</a></div>
         <div class="hamburger pr-2 lg:hidden">
           <img src="../images/icon-hamburger.svg" alt="hamburger icon" />
         </div>
         <div class="mobile-menu fixed top-0 left-0 min-h-full flex flex-col hidden p-6 w-full bg-gray-800 bg-opacity-20 transition delay-150 duration-300 ease-in-out">
-          <div class="close-icon w-full p-3.5 flex justify-end mb-8 z-50">
+          <div class="close-icon w-full py-5 px-3 flex justify-end z-50">
             <img src="../images/icon-close.svg" alt="close icon" />
           </div>
-          <div class="rounded py-8 px-6 flex flex-col justify-start items-center font-bold bg-white w-full h-full">
+          <div class="mt-8 rounded py-8 px-6 flex flex-col justify-start items-center font-bold bg-white w-full h-full">
             <a href="#pricing" class="py-3"> Pricing </a>
             <a href="#products" class="py-3"> Products </a>
             <a href="#aboutus" class="py-3"> About Us </a>
@@ -41,14 +41,33 @@
         </div>
       </nav>
     </header>
-    <section class="banner xl:container lg:mx-auto px-8 flex flex-col lg:flex-row-reverse my-8 lg:mt-28">
-      <div class="banner-image lg:w-1/2 flex justify-center lg:justify-end">
-        <img src="../images/illustration-intro.svg" alt="illustration-intro" />
+    <section class="banner xl:container lg:mx-auto px-8 flex flex-col md:flex-row-reverse my-8 lg:mt-28">
+      <div class="banner-image md:w-1/2 flex justify-center lg:justify-end items-center">
+        <img class="w-full" src="../images/illustration-intro.svg" alt="illustration-intro" />
       </div>
-      <div class="banner-text lg:w-1/2 flex flex-col justify-center items-center text-center md:items-start md:text-left mt-8 lg:mt-0">
-        <h1 class="text-4xl sm:text-5xl md:text-6xl xl:text-7xl leading-snug xl:leading-tight font-bold text-primary-blue">Bring everyone together to build better products.</h1>
-        <p class="max-w-md sm:text-xl sm:leading-9 pt-8 md:pt-8 pb-12 text-neutral-grayish-blue">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
-        <a href="#" class="red-btn">Get Started</a>
+      <div class="banner-text md:w-1/2 flex flex-col justify-center items-center text-center md:items-start md:text-left mt-8 lg:mt-0">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl leading-snug xl:leading-tight font-bold text-primary-blue">Bring everyone together to build better products.</h1>
+        <p class="max-w-md text-xs sm:text-xl leading-7 pt-8 md:pt-8 pb-12 text-neutral-grayish-blue">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+        <a href="#" class="red-btn shadow-red">Get Started</a>
+      </div>
+    </section>
+    <section class="features xl:container lg:mx-auto flex flex-col md:flex-row my-8 lg:mt-28">
+      <div class="features-text px-8 md:w-1/2 flex flex-col justify-center items-center text-center md:items-start md:justify-start md:text-left mt-8 lg:mt-0">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl xl:text-6xl leading-snug xl:leading-tight font-bold text-primary-blue">What’s different about Manage?</h2>
+        <p class="max-w-md text-xs sm:text-xl leading-7 pt-8 md:pt-8 pb-12 text-neutral-grayish-blue">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
+      </div>
+      <div class="grid grid-cols-m3 pl-8 md:pl-0 md:w-1/2 gap-y-2 md:gap-4">
+        <p class="red-btn text-xs sm:text-md -mr-4 md:mr-0 z-10">01</p>
+        <p class="heading text-xs sm:text-md md:text-xl font-bold text-primary-blue flex items-center justify-start pl-6 md:pl-0 bg-neutral-pale-red md:bg-transparent">Track company-wide progress</p>
+        <p class="para col-start-2 col-end-3 text-xs sm:text-lg leading-7 pr-8 pb-8 text-neutral-grayish-blue">
+          See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
+        </p>
+        <p class="red-btn text-xs sm:text-md -mr-4 md:mr-0 z-10">02</p>
+        <p class="heading text-xs sm:text-md md:text-xl font-bold text-primary-blue flex items-center justify-start pl-6 md:pl-0 bg-neutral-pale-red md:bg-transparent">Advanced built-in reports</p>
+        <p class="para col-start-2 col-end-3 text-xs sm:text-lg leading-7 pr-8 pb-8 text-neutral-grayish-blue">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
+        <p class="red-btn text-xs sm:text-md -mr-4 md:mr-0 z-10">03</p>
+        <p class="heading text-xs sm:text-md md:text-xl font-bold text-primary-blue flex items-center justify-start pl-6 md:pl-0 bg-neutral-pale-red md:bg-transparent">Everything you need in one place</p>
+        <p class="para col-start-2 col-end-3 text-xs sm:text-lg leading-7 pr-8 pb-8 text-neutral-grayish-blue">Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
       </div>
     </section>
     <!-- <pre>
