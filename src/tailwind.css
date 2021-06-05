@@ -34,7 +34,7 @@ body {
   }
 
   .head-text {
-    @apply max-w-md text-base sm:text-xl leading-7 pt-8 md:pt-8 pb-12 text-neutral-grayish-blue;
+    @apply max-w-md text-base sm:text-xl leading-9 pt-8 md:pt-8 pb-12 text-neutral-grayish-blue;
   }
 
   .head2-text {
@@ -50,6 +50,6 @@ body {
   }
 
   .grid-para {
-    @apply col-start-2 col-end-3 text-sm sm:text-lg leading-7 pr-8 pb-8 text-neutral-grayish-blue;
+    @apply col-start-2 col-end-3 text-base sm:text-lg leading-9 pr-8 pb-8 text-neutral-grayish-blue;
   }
 }
