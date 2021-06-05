@@ -1,29 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap");
 
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
-  background-image: url("../images/bg-tablet-pattern.svg"),
-    url("../images/bg-tablet-pattern.svg");
+  background-image: url("../images/bg-tablet-pattern.svg"), url("../images/bg-tablet-pattern.svg");
   background-position: top -4rem right -4rem, top 32rem left 14rem;
   font-family: "Be Vietnam", sans-serif;
   color: hsl(228, 39%, 23%);
 }
 
-@media only screen and (min-width: 640px) {
+@screen sm {
   body {
     background-position: top -4rem right -4rem, bottom 33rem left -33rem;
   }
 }
 
-@tailwind components;
+@layer components {
+  .flex-container {
+    @apply xl:container lg:mx-auto flex flex-col my-8 lg:mt-28;
+  }
+  .desktop-links {
+    @apply font-semibold px-4 text-sm lg:text-lg;
+  }
 
-.desktop-links{
-  @apply font-semibold px-4;
+  .red-btn {
+    @apply bg-primary-red px-6 py-2 rounded-full text-white font-bold md:px-10 md:py-4;
+  }
+
+  .mobile-menu {
+    @apply fixed top-0 left-0 min-h-full flex flex-col p-6 w-full bg-gray-800 bg-opacity-20 transition delay-150 duration-300 ease-in-out;
+  }
+
+  .head-text {
+    @apply max-w-md text-base sm:text-xl leading-7 pt-8 md:pt-8 pb-12 text-neutral-grayish-blue;
+  }
+
+  .head2-text {
+    @apply text-2xl sm:text-3xl md:text-4xl xl:text-6xl leading-snug xl:leading-tight font-bold text-primary-blue;
+  }
+
+  .grid-num {
+    @apply px-6 py-2 text-sm md:text-base lg:text-lg -mr-4 md:mr-0 z-10;
+  }
+
+  .grid-heading {
+    @apply text-base sm:text-lg md:text-xl font-bold text-primary-blue flex items-center justify-start pl-6 md:pl-0 bg-neutral-pale-red md:bg-transparent;
+  }
+
+  .grid-para {
+    @apply col-start-2 col-end-3 text-sm sm:text-lg leading-7 pr-8 pb-8 text-neutral-grayish-blue;
+  }
 }
-
-.red-btn{
-  @apply bg-primary-red px-6 py-2 rounded-full text-white font-bold md:px-10 md:py-4;
-}
-
-@tailwind utilities;

@@ -7,7 +7,7 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js" async defer></script>
+    <script src="./script.js" defer></script>
     <title>Frontend Mentor | Manage landing page</title>
   </head>
   <body class="min-h-full bg-no-repeat bg-contain sm:bg-auto">
@@ -27,7 +27,7 @@
         <div class="hamburger pr-2 lg:hidden">
           <img src="../images/icon-hamburger.svg" alt="hamburger icon" />
         </div>
-        <div class="mobile-menu fixed top-0 left-0 min-h-full flex flex-col hidden p-6 w-full bg-gray-800 bg-opacity-20 transition delay-150 duration-300 ease-in-out">
+        <div class="mobile-menu hidden">
           <div class="close-icon w-full py-5 px-3 flex justify-end z-50">
             <img src="../images/icon-close.svg" alt="close icon" />
           </div>
@@ -41,34 +41,36 @@
         </div>
       </nav>
     </header>
-    <section class="banner xl:container lg:mx-auto px-8 flex flex-col md:flex-row-reverse my-8 lg:mt-28">
+    <section class="banner flex-container md:flex-row-reverse px-8">
       <div class="banner-image md:w-1/2 flex justify-center lg:justify-end items-center">
         <img class="w-full" src="../images/illustration-intro.svg" alt="illustration-intro" />
       </div>
       <div class="banner-text md:w-1/2 flex flex-col justify-center items-center text-center md:items-start md:text-left mt-8 lg:mt-0">
         <h1 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl leading-snug xl:leading-tight font-bold text-primary-blue">Bring everyone together to build better products.</h1>
-        <p class="max-w-md text-xs sm:text-xl leading-7 pt-8 md:pt-8 pb-12 text-neutral-grayish-blue">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+        <p class="head-text">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
         <a href="#" class="red-btn shadow-red">Get Started</a>
       </div>
     </section>
-    <section class="features xl:container lg:mx-auto flex flex-col md:flex-row my-8 lg:mt-28">
+    <section class="features flex-container md:flex-row">
       <div class="features-text px-8 md:w-1/2 flex flex-col justify-center items-center text-center md:items-start md:justify-start md:text-left mt-8 lg:mt-0">
-        <h2 class="text-2xl sm:text-3xl md:text-4xl xl:text-6xl leading-snug xl:leading-tight font-bold text-primary-blue">What’s different about Manage?</h2>
-        <p class="max-w-md text-xs sm:text-xl leading-7 pt-8 md:pt-8 pb-12 text-neutral-grayish-blue">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
+        <h2 class="head2-text">What’s different about Manage?</h2>
+        <p class="head-text">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
       </div>
       <div class="grid grid-cols-m3 pl-8 md:pl-0 md:w-1/2 gap-y-2 md:gap-4">
-        <p class="red-btn text-xs sm:text-md -mr-4 md:mr-0 z-10">01</p>
-        <p class="heading text-xs sm:text-md md:text-xl font-bold text-primary-blue flex items-center justify-start pl-6 md:pl-0 bg-neutral-pale-red md:bg-transparent">Track company-wide progress</p>
-        <p class="para col-start-2 col-end-3 text-xs sm:text-lg leading-7 pr-8 pb-8 text-neutral-grayish-blue">
-          See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
-        </p>
-        <p class="red-btn text-xs sm:text-md -mr-4 md:mr-0 z-10">02</p>
-        <p class="heading text-xs sm:text-md md:text-xl font-bold text-primary-blue flex items-center justify-start pl-6 md:pl-0 bg-neutral-pale-red md:bg-transparent">Advanced built-in reports</p>
-        <p class="para col-start-2 col-end-3 text-xs sm:text-lg leading-7 pr-8 pb-8 text-neutral-grayish-blue">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
-        <p class="red-btn text-xs sm:text-md -mr-4 md:mr-0 z-10">03</p>
-        <p class="heading text-xs sm:text-md md:text-xl font-bold text-primary-blue flex items-center justify-start pl-6 md:pl-0 bg-neutral-pale-red md:bg-transparent">Everything you need in one place</p>
-        <p class="para col-start-2 col-end-3 text-xs sm:text-lg leading-7 pr-8 pb-8 text-neutral-grayish-blue">Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
+        <p class="red-btn grid-num">01</p>
+        <p class="grid-heading">Track company-wide progress</p>
+        <p class="grid-para">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+        <p class="red-btn grid-num">02</p>
+        <p class="grid-heading">Advanced built-in reports</p>
+        <p class="grid-para">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
+        <p class="red-btn grid-num">03</p>
+        <p class="grid-heading">Everything you need in one place</p>
+        <p class="grid-para">Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
       </div>
+    </section>
+
+    <section class="testimonials flex-container">
+      <div class="testimonials-text text-center head2-text">What they’ve said</div>
     </section>
     <!-- <pre>
 
