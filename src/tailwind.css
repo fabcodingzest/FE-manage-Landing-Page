@@ -36,27 +36,31 @@ body {
   }
 
   .desktop-links:hover {
-    @apply opacity-60;
+    @apply opacity-70;
   }
 
   .red-btn {
-    @apply bg-primary-red px-6 py-3 rounded-full text-white font-bold md:px-10 md:py-4;
+    @apply bg-primary-red px-6 py-3 rounded-full text-white font-bold lg:px-8 lg:py-4;
   }
 
   .red-btn:hover {
-    @apply opacity-60;
+    @apply opacity-70;
   }
 
   .mobile-menu {
     @apply fixed top-0 left-0 min-h-full flex flex-col p-6 w-full bg-gray-800 bg-opacity-20 transition delay-150 duration-300 ease-in-out;
   }
 
+  .hero-text {
+    @apply md:w-1/2 flex flex-col justify-center items-center text-center md:items-start md:text-left mt-8 lg:mt-0;
+  }
+
   .head-text {
-    @apply max-w-md text-base sm:text-xl leading-9 pt-8 md:pt-8 pb-12 text-neutral-grayish-blue;
+    @apply max-w-xs text-sm leading-7  pt-8 md:pt-8 pb-12 text-neutral-grayish-blue;
   }
 
   .head2-text {
-    @apply text-2xl sm:text-3xl md:text-4xl xl:text-5xl leading-snug xl:leading-tight font-bold text-primary-blue;
+    @apply text-2xl md:text-3xl xl:text-4xl leading-7 md:leading-9 xl:leading-snug font-bold text-primary-blue;
   }
 
   .grid-num {
@@ -64,11 +68,11 @@ body {
   }
 
   .grid-heading {
-    @apply text-base sm:text-lg md:text-xl font-bold text-primary-blue flex items-center justify-start pl-6 md:pl-0 bg-neutral-pale-red md:bg-transparent;
+    @apply text-sm sm:text-lg font-bold text-primary-blue flex items-center justify-start pl-4 sm:pl-6 md:pl-0 bg-neutral-pale-red md:bg-transparent;
   }
 
   .grid-para {
-    @apply col-start-2 col-end-3 text-base sm:text-lg leading-9 pr-8 pb-8 text-neutral-grayish-blue;
+    @apply col-start-1 md:col-start-2 col-end-3 text-sm leading-7  pr-8 pb-8 text-neutral-grayish-blue;
   }
   .indicator-btn {
     @apply inline-block h-3 w-3 m-2 border-2 border-primary-red rounded-full cursor-pointer transition-all duration-100 ease-in-out;
@@ -83,7 +87,7 @@ body {
   }
 
   .testimonials-box {
-    @apply mt-32 lg:mt-44 bg-neutral-light-gray rounded max-w-xl p-6 mx-8 text-center;
+    @apply mt-32 lg:mt-44 bg-neutral-light-gray rounded max-w-xl p-2 md:p-6 mx-8 text-center;
   }
 
   .testimonial-img {
@@ -95,7 +99,7 @@ body {
   }
 
   .testimonial-para {
-    @apply text-base sm:text-lg leading-9 px-2 pb-8 text-neutral-grayish-blue;
+    @apply text-sm sm:text-base leading-5 sm:leading-8 px-2 pb-8 text-neutral-grayish-blue;
   }
 
   .active {

@@ -15,9 +15,9 @@
     <!-- Header section containing nav -->
     <header class="xl:container lg:mx-auto">
       <nav class="flex justify-between items-start px-6 pt-12">
-        <div class="logo">
+        <a class="logo" class="inline-block" href="#">
           <img class="w-full" src="../images/logo.svg" alt="manage logo" />
-        </div>
+        </a>
         <div class="hidden lg:block">
           <a class="desktop-links" href="#pricing"> Pricing </a>
           <a class="desktop-links" href="#products"> Products </a>
@@ -25,7 +25,7 @@
           <a class="desktop-links" href="careers"> Careers </a>
           <a class="desktop-links" href="community"> Community </a>
         </div>
-        <div class="hidden lg:block"><a class="red-btn shadow-red" href="#">Get Started</a></div>
+        <div class="hidden xl:block"><a class="red-btn shadow-red" href="#">Get Started</a></div>
         <div class="hamburger pr-2 lg:hidden">
           <img src="../images/icon-hamburger.svg" alt="hamburger icon" />
         </div>
@@ -45,12 +45,12 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero flex-container md:flex-row-reverse px-8">
+    <section class="hero flex-container md:flex-row-reverse px-4">
       <div class="hero-image md:w-1/2 flex justify-center lg:justify-end items-center">
         <img class="w-full" src="../images/illustration-intro.svg" alt="illustration-intro" />
       </div>
-      <div class="hero-text md:w-1/2 flex flex-col justify-center items-center text-center md:items-start md:text-left mt-8 lg:mt-0">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl xl:text-6xl leading-snug xl:leading-tight font-bold text-primary-blue">Bring everyone together to build better products.</h1>
+      <div class="hero-text">
+        <h1 class="text-3xl sm:text-4xl md:text-4xl lg:text-5xl 2xl:text-6xl leading-snug sm:leading-tight lg:leading-tight 2xl:leading-tight font-bold text-primary-blue">Bring everyone together to build better products.</h1>
         <p class="head-text">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
         <a href="#" class="red-btn shadow-red">Get Started</a>
       </div>
@@ -58,11 +58,11 @@
 
     <!-- Features section -->
     <section class="features flex-container md:flex-row">
-      <div class="features-text px-8 md:w-1/2 flex flex-col justify-center items-center text-center md:items-start md:justify-start md:text-left mt-8 lg:mt-0">
+      <div class="features-text px-4 md:w-1/2 flex flex-col justify-center items-center text-center md:items-start md:justify-start md:text-left mt-8 lg:mt-0">
         <h2 class="head2-text">What’s different about Manage?</h2>
         <p class="head-text">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
       </div>
-      <div class="grid grid-cols-m3 pl-8 md:pl-0 md:w-1/2 gap-y-3 md:gap-4">
+      <div class="grid grid-cols-m3 pl-4 md:pl-0 md:w-1/2 gap-y-3 md:gap-y-1 md:gap-x-8">
         <p class="red-btn grid-num">01</p>
         <p class="grid-heading">Track company-wide progress</p>
         <p class="grid-para">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
@@ -103,14 +103,14 @@
         </div>
       </div>
       <div class="navigatiton flex justify-around items-center text-primary-red text-4xl max-w-xl mx-auto">
-        <i class="prev fas fa-chevron-circle-left"></i>
+        <i class="prev fas fa-chevron-circle-left hover:opacity-70 cursor-pointer"></i>
         <div class="t-indicator flex justify-center my-8">
           <span class="indicator-btn"></span>
           <span class="indicator-btn active"></span>
           <span class="indicator-btn"></span>
           <span class="indicator-btn"></span>
         </div>
-        <i class="next fas fa-chevron-circle-right"></i>
+        <i class="next fas fa-chevron-circle-right hover:opacity-70 cursor-pointer"></i>
       </div>
       <div class="pb-14 flex justify-center"><a class="red-btn shadow-red" href="#">Get Started</a></div>
     </section>
