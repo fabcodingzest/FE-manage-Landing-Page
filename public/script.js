@@ -31,7 +31,6 @@ function getKey() {
 
 setInterval(() => {
   let key = getKey();
-  console.log(key);
   key = key + 1 > 3 ? 0 : key + 1;
   changeSlide(key);
 }, 2000);
