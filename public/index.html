@@ -6,6 +6,7 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
     <script src="./script.js" defer></script>
     <title>Frontend Mentor | Manage landing page</title>
@@ -95,11 +96,15 @@
           </div>
         </div>
       </div>
-      <div class="t-indicator w-full flex justify-center my-8">
-        <span class="indicator-btn"></span>
-        <span class="indicator-btn active"></span>
-        <span class="indicator-btn"></span>
-        <span class="indicator-btn"></span>
+      <div class="navigatiton flex justify-around items-center text-primary-red text-4xl max-w-xl mx-auto">
+        <i class="prev fas fa-chevron-circle-left"></i>
+        <div class="t-indicator flex justify-center my-8">
+          <span class="indicator-btn"></span>
+          <span class="indicator-btn active"></span>
+          <span class="indicator-btn"></span>
+          <span class="indicator-btn"></span>
+        </div>
+        <i class="next fas fa-chevron-circle-right"></i>
       </div>
       <div class="pb-14 flex justify-center"><a class="red-btn shadow-red" href="#">Get Started</a></div>
     </section>
