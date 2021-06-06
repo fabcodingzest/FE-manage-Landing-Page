@@ -26,9 +26,15 @@ function getKey() {
   const width = parseInt(window.getComputedStyle(testimonialsContainer).getPropertyValue("width").split("").slice(0, -2).join(""));
   let x = parseInt(matrix.match(/matrix.*\((.+)\)/)[1].split(", ")[4]);
   let key = x < 0 ? ((x / width) * -100) / 25 : 0;
-  console.log(key);
   return key;
 }
+
+setInterval(() => {
+  let key = getKey();
+  console.log(key);
+  key = key + 1 > 3 ? 0 : key + 1;
+  changeSlide(key);
+}, 2000);
 
 prevBtn.addEventListener("click", () => {
   let key = getKey() - 1;

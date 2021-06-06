@@ -26,7 +26,7 @@ body {
   }
 
   .red-btn {
-    @apply bg-primary-red px-6 py-2 rounded-full text-white font-bold md:px-10 md:py-4;
+    @apply bg-primary-red px-6 py-3 rounded-full text-white font-bold md:px-10 md:py-4;
   }
 
   .mobile-menu {
@@ -53,12 +53,15 @@ body {
     @apply col-start-2 col-end-3 text-base sm:text-lg leading-9 pr-8 pb-8 text-neutral-grayish-blue;
   }
   .indicator-btn {
-    @apply inline-block h-3 w-3 m-2 border-2 border-primary-red rounded-full cursor-pointer;
+    @apply inline-block h-3 w-3 m-2 border-2 border-primary-red rounded-full cursor-pointer transition-all duration-100 ease-in-out;
+  }
+  .indicator-btn:hover {
+    @apply bg-primary-red;
   }
 
   .testimonials-container {
     width: 400%;
-    @apply transform -translate-x-1/4  flex transition delay-150 duration-300 ease-in-out;
+    @apply transform -translate-x-1/4  flex transition duration-300 ease-in-out;
   }
 
   .testimonials-box {
