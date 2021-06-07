@@ -56,11 +56,11 @@ body {
   }
 
   .head-text {
-    @apply max-w-xs text-sm leading-7  pt-8 md:pt-8 pb-12 text-neutral-grayish-blue;
+    @apply max-w-xs xl:max-w-sm text-sm leading-7 xl:text-base xl:leading-8 pt-8 md:pt-8 pb-12 text-neutral-grayish-blue;
   }
 
   .head2-text {
-    @apply text-2xl md:text-3xl xl:text-4xl leading-7 md:leading-9 xl:leading-snug font-bold text-primary-blue;
+    @apply text-2xl md:text-3xl xl:text-5xl leading-7 md:leading-9 xl:leading-snug font-bold text-primary-blue;
   }
 
   .grid-num {
@@ -72,7 +72,7 @@ body {
   }
 
   .grid-para {
-    @apply col-start-1 md:col-start-2 col-end-3 text-sm leading-7  pr-8 pb-8 text-neutral-grayish-blue;
+    @apply col-start-1 md:col-start-2 col-end-3 text-sm xl:text-base leading-7 xl:leading-8  pr-8 pb-8 text-neutral-grayish-blue;
   }
   .indicator-btn {
     @apply inline-block h-3 w-3 m-2 border-2 border-primary-red rounded-full cursor-pointer transition-all duration-100 ease-in-out;
