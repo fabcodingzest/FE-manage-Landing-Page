@@ -23,7 +23,7 @@ function checkValidity() {
   const isValidEmail = formInput.value.length === 0 ? false : formInput.checkValidity();
   const containsHidden = invalidMsg.classList.contains("hidden");
   invalidMsg.textContent = formInput.value.length === 0 ? "This cannot be empty" : "Please insert a valid email";
-  
+
   if (isValidEmail) {
     formSubmitBtn.disabled = false;
     if (!containsHidden) {
@@ -72,7 +72,7 @@ const repeater = () => {
     let key = getKey();
     key = key + 1 > 3 ? 0 : key + 1;
     changeSlide(key);
-  }, 2000);
+  }, 3000);
 };
 
 repeater(); // calling the interval
