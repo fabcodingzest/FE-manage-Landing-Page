@@ -5,6 +5,10 @@ const indicatorBtns = document.querySelectorAll(".indicator-btn");
 const testimonialsContainer = document.querySelector(".testimonials-container");
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
+const form = document.form;
+const formInput = document.querySelector(".form-input");
+const formSubmitBtn = document.querySelector(".submit-btn");
+const invalidMsg = document.querySelector(".invalid-msg");
 
 // Object for transforating testimonials container
 const sliderObj = {
@@ -13,6 +17,36 @@ const sliderObj = {
   2: "-50",
   3: "-75",
 };
+
+// Checking the validity of the input
+function checkValidity() {
+  const isValidEmail = formInput.value.length === 0 ? false : formInput.checkValidity();
+  const containsHidden = invalidMsg.classList.contains("hidden");
+  invalidMsg.textContent = formInput.value.length === 0 ? "This cannot be empty" : "Please insert a valid email";
+  
+  if (isValidEmail) {
+    formSubmitBtn.disabled = false;
+    if (!containsHidden) {
+      invalidMsg.classList.add("hidden");
+    }
+  } else {
+    formSubmitBtn.disabled = true;
+    if (containsHidden) {
+      invalidMsg.classList.remove("hidden");
+    }
+  }
+}
+
+// Form Validation
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  checkValidity();
+});
+
+formInput.addEventListener("keyup", (e) => {
+  e.preventDefault();
+  checkValidity();
+});
 
 // changing container transform and indicator to active
 function changeSlide(i) {
@@ -75,13 +109,11 @@ indicatorBtns.forEach((btn, i) => {
 
 //  Open & close mobile menu on click event
 menuOpen.addEventListener("click", () => {
-  console.log("open");
   menuOpen.classList.add("hidden");
   mobileMenu.classList.remove("hidden");
 });
 
 menuClose.addEventListener("click", () => {
-  console.log("close");
   menuOpen.classList.remove("hidden");
   mobileMenu.classList.add("hidden");
 });
