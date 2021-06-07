@@ -2,18 +2,19 @@
   "name": "manage-landing-page-master",
   "version": "1.0.0",
   "description": "Frontendmentor Manage Landing Page challenge solution.",
-  "main": "index.js",
   "dependencies": {
     "postcss-cli": "^8.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
+    "live-server": "^1.2.1",
     "postcss": "^8.3.0",
     "tailwindcss": "^2.1.2"
   },
   "scripts": {
-    "build": "postcss ./src/tailwind.css -o ./public/styles.css",
-    "prod": "NODE_ENV=production postcss ./src/tailwind.css -o ./public/styles.css"
+    "build:css": "postcss ./src/tailwind.css -o ./public/styles.css",
+    "dev": "npm run build:css && live-server public",
+    "prod": "NODE_ENV=production npm run build:css"
   },
   "repository": {
     "type": "git",
