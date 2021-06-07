@@ -18,11 +18,17 @@ body {
 
 @screen sm {
   body {
-    background-position: top -4rem right -4rem, bottom 40rem left -25rem;
+    background-position: top -16rem right -20rem, bottom 64rem left -30rem;
   }
   .simplify {
     background-image: url("../images/bg-simplify-section-desktop.svg");
-    background-position: top -6rem right -12rem;
+    background-position: top -10rem right -16rem;
+  }
+}
+
+@screen lg {
+  body {
+    background-position: top -4rem right -4rem, bottom 54rem left -30rem;
   }
 }
 
@@ -107,5 +113,15 @@ body {
 
   .social-icons {
     @apply transition-all duration-100 ease-in hover:text-primary-red cursor-pointer;
+  }
+  .form-input:valid {
+    @apply border-2 border-transparent text-primary-blue;
+  }
+  .form-input:invalid {
+    @apply border-2 border-primary-red text-primary-red;
+  }
+  .submit-btn:disabled {
+    @apply opacity-60;
+    cursor: not-allowed;
   }
 }
