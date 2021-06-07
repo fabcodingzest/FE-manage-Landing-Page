@@ -22,7 +22,6 @@ body {
   }
   .simplify {
     background-image: url("../images/bg-simplify-section-desktop.svg");
-    background-position: top 2rem left 0rem;
     background-position: top -6rem right -12rem;
   }
 }
