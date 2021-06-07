@@ -11,7 +11,8 @@
     <script src="./script.js" defer></script>
     <title>Frontend Mentor | Manage landing page</title>
   </head>
-  <body class="min-h-full bg-no-repeat bg-contain sm:bg-auto">
+  
+  <body class="min-h-full bg-no-repeat bg-contain lg:bg-auto">
     <!-- Header section containing nav -->
     <header class="xl:container lg:mx-auto">
       <nav class="flex justify-between items-start px-4 sm:px-6 pt-12">
@@ -138,10 +139,13 @@
       <div class="flex-container px-6 md:px-4 lg:px-8 m-0 w-full">
         <div class="flex flex-col md:flex-row-reverse items-center md:items-start justify-between w-full h-full text-neutral-light-gray">
           <div class="form flex justify-center md:justify-end w-full md:w-3/7">
-            <form class="flex items-center justify-between w-full max-w-sm text-xs lg:text-sm my-4 md:my-0">
-              <input class="p-3 lg:p-4 rounded-full w-full" type="email" placeholder="Updates in your mail..." name="email" id="email" />
-              <label for="email" class="hidden" aria-hidden="true">Email</label>
-              <div class="uppercase ml-3"><a class="red-btn" href="#">Go</a></div>
+            <form name="form" class="flex flex-col items-start justify-between my-4 md:my-0 w-full max-w-md">
+              <div class="flex items-center w-full text-xs lg:text-sm">
+                <input class="form-input p-3 lg:p-4 rounded-full w-full outline-none" type="email" placeholder="Updates in your mail..." name="email" id="email" />
+                <label for="email" class="hidden" aria-hidden="true">Email</label>
+                <button type="submit" class="submit-btn red-btn uppercase ml-3 outline-none">Go</button>
+              </div>
+              <div class="invalid-msg text-xs lg:text-sm text-primary-red py-2 px-3 hidden">Please insert a valid email</div>
             </form>
           </div>
           <div class="grid grid-cols-2 w-full md:w-3/7 max-w-sm pl-8 md:pl-0 my-8 md:my-0">
@@ -186,7 +190,7 @@
             </div>
           </div>
         </div>
-        <div class="attribution text-sm lg:text-sm text-neutral-grayish-blue py-6 text-center md:text-right">
+        <div class="attribution text-sm lg:text-base text-neutral-grayish-blue py-6 text-center md:text-right">
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a class="text-primary-red" href="https://linktr.ee/fabcodingzest">Fab</a> with ❤️.
         </div>
