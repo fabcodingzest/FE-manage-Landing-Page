@@ -5,6 +5,9 @@
 @tailwind utilities;
 
 body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   background-image: url("../images/bg-tablet-pattern.svg"), url("../images/bg-tablet-pattern.svg");
   background-position: top -4rem right -4rem, top 32rem left 14rem;
   font-family: "Be Vietnam", sans-serif;
