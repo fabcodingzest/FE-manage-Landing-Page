@@ -113,6 +113,13 @@ body {
   .active {
     @apply bg-primary-red;
   }
+  .footer-link {
+    @apply pb-4;
+  }
+
+  .footer-link:hover {
+    @apply text-primary-red;
+  }
 
   .social-icons {
     @apply transition-all duration-100 ease-in hover:text-primary-red cursor-pointer;
