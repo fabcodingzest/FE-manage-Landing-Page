@@ -87,7 +87,7 @@ body {
     @apply inline-block h-3 w-3 m-2 border-2 border-primary-red rounded-full cursor-pointer transition-all duration-100 ease-in-out;
   }
   .indicator-btn:hover {
-    @apply bg-primary-red;
+    @apply xl:bg-primary-red;
   }
 
   .testimonials-container {
