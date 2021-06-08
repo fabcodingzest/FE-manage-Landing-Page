@@ -9,6 +9,7 @@ const form = document.form;
 const formInput = document.querySelector(".form-input");
 const formSubmitBtn = document.querySelector(".submit-btn");
 const invalidMsg = document.querySelector(".invalid-msg");
+const mobileLinks = document.querySelectorAll(".mobile-link");
 
 // Object for transforating testimonials container
 const sliderObj = {
@@ -17,6 +18,35 @@ const sliderObj = {
   2: "-50",
   3: "-75",
 };
+
+//  Open & close mobile menu on click event
+menuOpen.addEventListener("click", () => {
+  menuOpen.classList.add("hidden");
+  mobileMenu.classList.remove("hidden");
+});
+
+function closeMobileMenu() {
+  menuOpen.classList.remove("hidden");
+  mobileMenu.classList.add("hidden");
+}
+
+menuClose.addEventListener("click", () => {
+  closeMobileMenu();
+});
+
+// Close mobile menu if clicked outside of menu
+mobileMenu.addEventListener("click", (e) => {
+  if (e.target == mobileMenu) {
+    closeMobileMenu();
+  }
+});
+
+// Closing mobile menu on link click
+mobileLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    closeMobileMenu();
+  });
+});
 
 // Checking the validity of the input
 function checkValidity() {
@@ -37,12 +67,13 @@ function checkValidity() {
   }
 }
 
-// Form Validation
+// Form Validation on submit
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   checkValidity();
 });
 
+// Form Validation while user types in the email
 formInput.addEventListener("keyup", (e) => {
   e.preventDefault();
   checkValidity();
@@ -105,23 +136,4 @@ indicatorBtns.forEach((btn, i) => {
   btn.addEventListener("click", () => {
     changeSlide(i);
   });
-});
-
-//  Open & close mobile menu on click event
-menuOpen.addEventListener("click", () => {
-  menuOpen.classList.add("hidden");
-  mobileMenu.classList.remove("hidden");
-});
-
-menuClose.addEventListener("click", () => {
-  menuOpen.classList.remove("hidden");
-  mobileMenu.classList.add("hidden");
-});
-
-// Close mobile menu if clicked outside of menu
-mobileMenu.addEventListener("click", (e) => {
-  if (e.target == mobileMenu) {
-    menuOpen.classList.remove("hidden");
-    mobileMenu.classList.add("hidden");
-  }
 });
