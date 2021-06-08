@@ -33,109 +33,108 @@
           <a class="desktop-links" href="#pricing"> Pricing </a>
           <a class="desktop-links" href="#products"> Products </a>
           <a class="desktop-links" href="#aboutus"> About Us </a>
-          <a class="desktop-links" href="careers"> Careers </a>
-          <a class="desktop-links" href="community"> Community </a>
+          <a class="desktop-links" href="#community"> Careers </a>
+          <a class="desktop-links" href="#community"> Community </a>
         </div>
         <div class="hidden xl:block"><a class="red-btn shadow-red" href="#">Get Started</a></div>
         <div class="hamburger pr-2 lg:hidden">
           <img src="./images/icon-hamburger.svg" alt="hamburger icon" />
         </div>
-        <div class="mobile-menu hidden">
+        <div class="mobile-menu hidden z-50">
           <div class="close-icon w-full py-5 px-1 flex justify-end z-50">
             <img src="./images/icon-close.svg" alt="close icon" />
           </div>
           <div class="mt-8 rounded py-8 px-6 flex flex-col justify-start items-center font-bold bg-white w-full h-full">
-            <a href="#pricing" class="py-3"> Pricing </a>
-            <a href="#products" class="py-3"> Products </a>
-            <a href="#aboutus" class="py-3"> About Us </a>
-            <a href="careers" class="py-3"> Careers </a>
-            <a href="community" class="py-3"> Community </a>
+            <a href="#pricing" class="mobile-link py-3"> Pricing </a>
+            <a href="#products" class="mobile-link py-3"> Products </a>
+            <a href="#aboutus" class="mobile-link py-3"> About Us </a>
+            <a href="#community" class="mobile-link py-3"> Careers </a>
+            <a href="#community" class="mobile-link py-3"> Community </a>
           </div>
         </div>
       </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero flex-container md:flex-row-reverse px-4 sm:px-6">
-      <div class="hero-image md:w-1/2 flex justify-center lg:justify-end items-center">
-        <img class="w-full" src="./images/illustration-intro.svg" alt="illustration-intro" />
-      </div>
-      <div class="hero-text">
-        <h1 class="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl leading-snug sm:leading-tight lg:leading-tight xl:leading-tight font-bold text-primary-blue">Bring everyone together to build better products.</h1>
-        <p class="head-text">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
-        <a href="#" class="red-btn shadow-red">Get Started</a>
-      </div>
-    </section>
-
-    <!-- Features section -->
-    <section class="features flex-container md:flex-row">
-      <div class="features-text px-4 md:w-1/2 flex flex-col justify-center items-center text-center md:items-start md:justify-start md:text-left mt-8 lg:mt-0">
-        <h2 class="head2-text">What’s different about Manage?</h2>
-        <p class="head-text">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
-      </div>
-      <div class="grid grid-cols-m3 pl-4 md:pl-0 md:w-1/2 gap-y-3 md:gap-y-1 md:gap-x-4 md:pr-2">
-        <p class="red-btn grid-num">01</p>
-        <p class="grid-heading">Track company-wide progress</p>
-        <p class="grid-para">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
-        <p class="red-btn grid-num">02</p>
-        <p class="grid-heading">Advanced built-in reports</p>
-        <p class="grid-para">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
-        <p class="red-btn grid-num">03</p>
-        <p class="grid-heading">Everything you need in one place</p>
-        <p class="grid-para">Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
-      </div>
-    </section>
-
-    <!-- Testimonial section (with slider/carousel) -->
-    <section class="testimonials overflow-x-hidden my-12">
-      <div class="testimonials-text text-center head2-text">What they’ve said</div>
-      <div class="max-w-xl mx-auto overflow-x-hidden lg:overflow-x-visible">
-        <div class="testimonials-container">
-          <div class="testimonials-box">
-            <div class="testimonial-img"><img src="./images/avatar-anisha.png" alt="avatar anisha" class="max-w-full" /></div>
-            <p class="testimonial-name">Anisha Li</p>
-            <p class="testimonial-para">“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
-          </div>
-          <div class="testimonials-box">
-            <div class="testimonial-img"><img src="./images/avatar-ali.png" alt="avatar ali" class="max-w-full" /></div>
-            <p class="testimonial-name">Ali Bravo</p>
-            <p class="testimonial-para">“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
-          </div>
-          <div class="testimonials-box">
-            <div class="testimonial-img"><img src="./images/avatar-richard.png" alt="avatar richard" class="max-w-full" /></div>
-            <p class="testimonial-name">Richard Watts</p>
-            <p class="testimonial-para">“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”</p>
-          </div>
-          <div class="testimonials-box">
-            <div class="testimonial-img"><img src="./images/avatar-shanai.png" alt="avatar shanai" class="max-w-full" /></div>
-            <p class="testimonial-name">Shanai Gough</p>
-            <p class="testimonial-para">“Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+    <main>
+      <!-- Hero Section -->
+      <section id="aboutus" class="hero flex-container md:flex-row-reverse px-4 sm:px-6">
+        <div class="hero-image md:w-1/2 flex justify-center lg:justify-end items-center">
+          <img class="w-full" src="./images/illustration-intro.svg" alt="illustration-intro" />
+        </div>
+        <div class="hero-text">
+          <h1 class="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl leading-snug sm:leading-tight lg:leading-tight xl:leading-tight font-bold text-primary-blue">Bring everyone together to build better products.</h1>
+          <p class="head-text">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+          <a href="#" class="red-btn shadow-red">Get Started</a>
+        </div>
+      </section>
+      <!-- Features section -->
+      <section id="products" class="features flex-container md:flex-row">
+        <div class="features-text px-4 md:w-1/2 flex flex-col justify-center items-center text-center md:items-start md:justify-start md:text-left mt-8 lg:mt-0">
+          <h2 class="head2-text">What’s different about Manage?</h2>
+          <p class="head-text">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
+        </div>
+        <div class="grid grid-cols-m3 pl-4 md:pl-0 md:w-1/2 gap-y-3 md:gap-y-1 md:gap-x-4 md:pr-2">
+          <p class="red-btn grid-num">01</p>
+          <p class="grid-heading">Track company-wide progress</p>
+          <p class="grid-para">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+          <p class="red-btn grid-num">02</p>
+          <p class="grid-heading">Advanced built-in reports</p>
+          <p class="grid-para">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
+          <p class="red-btn grid-num">03</p>
+          <p class="grid-heading">Everything you need in one place</p>
+          <p class="grid-para">Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
+        </div>
+      </section>
+      <!-- Testimonial section (with slider/carousel) -->
+      <section id="community" class="testimonials overflow-x-hidden my-12">
+        <div class="testimonials-text text-center head2-text">What they’ve said</div>
+        <div class="max-w-xl mx-auto overflow-x-hidden lg:overflow-x-visible">
+          <div class="testimonials-container">
+            <div class="testimonials-box">
+              <div class="testimonial-img"><img src="./images/avatar-anisha.png" alt="avatar anisha" class="max-w-full" /></div>
+              <p class="testimonial-name">Anisha Li</p>
+              <p class="testimonial-para">“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+            </div>
+            <div class="testimonials-box">
+              <div class="testimonial-img"><img src="./images/avatar-ali.png" alt="avatar ali" class="max-w-full" /></div>
+              <p class="testimonial-name">Ali Bravo</p>
+              <p class="testimonial-para">“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+            </div>
+            <div class="testimonials-box">
+              <div class="testimonial-img"><img src="./images/avatar-richard.png" alt="avatar richard" class="max-w-full" /></div>
+              <p class="testimonial-name">Richard Watts</p>
+              <p class="testimonial-para">“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”</p>
+            </div>
+            <div class="testimonials-box">
+              <div class="testimonial-img"><img src="./images/avatar-shanai.png" alt="avatar shanai" class="max-w-full" /></div>
+              <p class="testimonial-name">Shanai Gough</p>
+              <p class="testimonial-para">“Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="navigatiton flex justify-around items-center text-primary-red text-4xl max-w-xl mx-auto">
-        <i class="prev fas fa-chevron-circle-left hover:opacity-70 cursor-pointer"></i>
-        <div class="t-indicator flex justify-center my-8">
-          <span class="indicator-btn"></span>
-          <span class="indicator-btn active"></span>
-          <span class="indicator-btn"></span>
-          <span class="indicator-btn"></span>
+        <div class="navigatiton flex justify-around items-center text-primary-red text-4xl max-w-xl mx-auto">
+          <i class="prev fas fa-chevron-circle-left hover:opacity-70 cursor-pointer"></i>
+          <div class="t-indicator flex justify-center my-8">
+            <span class="indicator-btn"></span>
+            <span class="indicator-btn active"></span>
+            <span class="indicator-btn"></span>
+            <span class="indicator-btn"></span>
+          </div>
+          <i class="next fas fa-chevron-circle-right hover:opacity-70 cursor-pointer"></i>
         </div>
-        <i class="next fas fa-chevron-circle-right hover:opacity-70 cursor-pointer"></i>
-      </div>
-      <div class="pb-14 flex justify-center"><a class="red-btn shadow-red" href="#">Get Started</a></div>
-    </section>
-
-    <!-- Simplify section -->
-    <section class="simplify bg-primary-red bg-no-repeat sm:bg-auto py-6 sm:py-0">
-      <div class="flex-container justify-center items-center text-center md:text-left md:justify-between md:flex-row px-6">
-        <div class="max-w-2xl md:max-w-md text-3xl sm:text-3xl lg:text-4xl leading-snug xl:leading-tight font-bold text-neutral-light-gray">Simplify how your team works today.</div>
-        <div class="py-8 flex justify-center"><a class="red-btn bg-neutral-light-gray text-primary-red" href="#">Get Started</a></div>
-      </div>
-    </section>
+        <div class="pb-14 flex justify-center"><a class="red-btn shadow-red" href="#">Get Started</a></div>
+      </section>
+      <!-- Simplify section -->
+      <section id="pricing" class="simplify bg-primary-red bg-no-repeat sm:bg-auto py-6 sm:py-0">
+        <div class="flex-container justify-center items-center text-center md:text-left md:justify-between md:flex-row px-6">
+          <div class="max-w-2xl md:max-w-md text-3xl sm:text-3xl lg:text-4xl leading-snug xl:leading-tight font-bold text-neutral-light-gray">Simplify how your team works today.</div>
+          <div class="py-8 flex justify-center"><a class="red-btn bg-neutral-light-gray text-primary-red" href="#">Get Started</a></div>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer -->
-    <div class="footer bg-neutral-dark-blue py-6 flex justify-center">
+    <footer class="footer bg-neutral-dark-blue py-6 flex justify-center">
       <div class="flex-container px-6 md:px-4 lg:px-8 m-0 w-full">
         <div class="flex flex-col md:flex-row-reverse items-center md:items-start justify-between w-full h-full text-neutral-light-gray">
           <div class="form flex justify-center md:justify-end w-full md:w-3/7">
@@ -150,11 +149,11 @@
           </div>
           <div class="grid grid-cols-2 w-full md:w-3/7 max-w-sm pl-8 md:pl-0 my-8 md:my-0">
             <a class="footer-link" href="#">Home</a>
-            <a class="footer-link" href="#">Pricing</a>
-            <a class="footer-link" href="#">Products</a>
-            <a class="footer-link" href="#">About Us</a>
-            <a class="footer-link" href="#">Careers</a>
-            <a class="footer-link" href="#">Community</a>
+            <a class="footer-link" href="#pricing">Pricing</a>
+            <a class="footer-link" href="#products">Products</a>
+            <a class="footer-link" href="#aboutus">About Us</a>
+            <a class="footer-link" href="#community">Careers</a>
+            <a class="footer-link" href="#community">Community</a>
             <a class="footer-link" href="#">Privacy Policy</a>
           </div>
           <div class="flex flex-col-reverse md:flex-col justify-between w-full md:w-2/7 items-center md:items-start max-w-xs mx-auto md:mx-0 h-full">
@@ -195,6 +194,6 @@
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a class="text-primary-red" href="https://linktr.ee/fabcodingzest">Fab</a> with ❤️.
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
