@@ -15,7 +15,6 @@ This is a solution to the [Manage landing page challenge on Frontend Mentor](htt
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -71,6 +70,7 @@ I went easy and did a section a day or sometimes two when I didn't feel like it 
 - After completing the project, I wanted to find a way so I won't have to build my CSS every time changes in `tailwind.config.js` and `tailwind.css` files occur, so I searched a lot and discovered [Tailwind JIT Mode(Just in Time)](https://tailwindcss.com/docs/just-in-time-mode). JIT in Tailwind is a blessing XD.
 
 ### Useful resources
+
 - [Testimonial Slider](https://www.youtube.com/watch?v=fzgLWi40-2g&list=LL&index=6) - This is an amazing video which exactly helped me with the positioning of the testimonial section, I only picked out few things which I wanted.
 
 - [Image Slider](https://www.youtube.com/watch?v=0wvrlOyGlq0&list=LL&index=8&t=616s) - This helped me but again,I just picked up some styling from the tutorial as radio buttons for slider was way too complicated for me so that was taken from the other tutorial(mentioned above).
